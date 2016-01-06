@@ -3,7 +3,7 @@
 Plugin Name: Module Extender for Divi
 Plugin URI:  http://optimusdivi.com/modules/
 Description: The Module Extender for Divi adds the capacity to import custom modules into the Divi Page Builder. Build your own or choose from our modules list.
-Version:     1.0.0
+Version:     1.0.1
 Author:      Mitchell Bray
 Author URI:  http://makeweb.com.au/
 */
