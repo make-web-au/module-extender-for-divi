@@ -18,7 +18,7 @@ if ( ! function_exists( 'et_builder_add_main_elements' ) ){
 		ME_get_the_modules();
 	}	
 }else{	
-	ME_get_the_modules();
+// 	ME_get_the_modules();
 }
 
 function ME_get_the_modules( )
