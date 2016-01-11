@@ -1,0 +1,14 @@
+
+.et-pb-all-modules .et_pb_andafter:before, .et_pb_saved_layouts_list .et_pb_andafter:before {
+    content: '\64';
+    transform: rotate(90deg);
+}
+
+.et-pb-all-modules .et_pb_vtabs:before, .et_pb_saved_layouts_list .et_pb_vtabs:before {
+    content: '\51';
+    transform: rotate(-90deg);
+}
+
+.et-pb-all-modules .et_pb_buynow:before, .et_pb_saved_layouts_list .et_pb_buynow:before {
+    content: '\37';
+}
