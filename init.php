@@ -12,11 +12,17 @@ Author URI:  http://makeweb.com.au/
 if ( ! defined( 'WPINC' ) ) {die;}
 
 include_once plugin_dir_path( __FILE__ ) . 'inc/helper.php'; //Include helper functions to be used by modules
+include_once plugin_dir_path( __FILE__ ) . 'inc/options.php'; //Include options page
+
 
 function load_custom_wp_admin_style() {
+	$options = get_option( 'MW_settings' );	
         wp_register_style( 'module_icons_css',  plugin_dir_url( __FILE__ ) . '/inc/icons.css', false, '1.0.0' );
         wp_enqueue_style( 'module_icons_css' );
-        wp_enqueue_script( 'dev_mode',  plugin_dir_url( __FILE__ ) . '/inc/dev.js');
+    if($options['MW_devmode']){
+	    wp_enqueue_script( 'dev_mode',  plugin_dir_url( __FILE__ ) . '/inc/dev.js');
+    }
+        
 }
 add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
 

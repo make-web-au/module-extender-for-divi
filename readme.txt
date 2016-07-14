@@ -2,7 +2,7 @@
 Contributors: make-web, pressedsites 
 Tags: divi, module
 Requires at least: 4.3
-Tested up to: 4.4.2
+Tested up to: 4.5.3
 Stable tag: 1.2.1
 
 The Module Extender For Divi adds the capacity to import custom modules into the Divi Page Builder. 
@@ -23,3 +23,12 @@ This platform makes extending Divi Page Builder easy.
 1. Download the zip file
 2. Install using WordPress plugin add new
 3. start adding modules.
+
+
+== Changelog ==
+= 1.2.1 =
+* Added settings page
+* Added Dev Mode (allows you to turn of local storage while developing modules)
+
+= 1.2 =
+* Updated to run using new divi hook

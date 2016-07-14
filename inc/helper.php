@@ -13,7 +13,6 @@ if(!function_exists("getme_url")) {
 	}
 }
 
-
 // Enques icon css to admin
 if(!function_exists("getme_theIcon")) {
 		function getme_theIcon(){
