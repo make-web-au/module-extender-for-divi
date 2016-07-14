@@ -1,5 +1,7 @@
 <?php
-
+function callingFile(){
+	return debug_backtrace()[0]['file'];
+}
 // Returns url based on path provided
 if(!function_exists("getme_url")) {
 	function getme_url($loc){
@@ -10,3 +12,27 @@ if(!function_exists("getme_url")) {
 		return $url;
 	}
 }
+
+
+// Enques icon css to admin
+if(!function_exists("getme_theIcon")) {
+		function getme_theIcon(){
+		$loc = debug_backtrace()[0]['file'];
+		$url = dirname(getme_url($loc));
+		return $url;
+	}
+}
+
+function print_inline_script() {
+?>
+<style type="text/css">
+.et-pb-all-modules .et_pb_mw_linkbar:before, .et-pb-all-modules .et_pb_mw_linkbar:before, .et_pb_saved_layouts_list .et_pb_mw_linkbar:before, .et_pb_saved_layouts_list .et_pb_mw_linkbar:before {
+    content: '\53';
+}
+<?php
+	
+?>
+</style>
+<?php
+}
+add_action( 'admin_enqueue_scripts', 'print_inline_script' );

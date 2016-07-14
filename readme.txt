@@ -2,8 +2,8 @@
 Contributors: make-web, pressedsites 
 Tags: divi, module
 Requires at least: 4.3
-Tested up to: 4.3.1
-Stable tag: 1.2.0
+Tested up to: 4.4.2
+Stable tag: 1.2.1
 
 The Module Extender For Divi adds the capacity to import custom modules into the Divi Page Builder. 
 Build your own or choose from our modules list.
